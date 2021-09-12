@@ -14,7 +14,9 @@
   <!-- google Montserrat  font  -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" 
+  rel="stylesheet" />
+  
 </head>
 
 <body>
@@ -22,10 +24,9 @@
   <h1 class = 'text-center' >The Sundarban  Store in Bangladesh </h1>
   <main class="main">
     <div class="search-field">
-      <div class="search-box">
-        <input id="input-field" class="search-field" type="text" />
-        <button type="button" class="btn btn-primary search-button" data-toggle="button" aria-pressed="false"
-          autocomplete="off" id="search-btn" onclick="loadProducts()">
+      <div class="search-box ">
+        <input id="input-field" class="search-field " type="text" />
+        <button  onclick="loadProducts()"><i class="fal fa-search"></i>
           Search
         </button>
       </div>
@@ -51,7 +52,7 @@
             <tbody>
               <tr>
                 <th>Total Added-Products:</th>
-                <td>$ <span id="total-Products">0</span></td>
+                <td><span id="total-Products">0</span></td>
                 <td></td>
                 <td></td>
               </tr>
