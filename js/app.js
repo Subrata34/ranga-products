@@ -13,10 +13,11 @@ const showProducts = (products) => {
     const image = product.image;
     const div = document.createElement("div"); 
     div.classList.add("product");
-    div.innerHTML = `<div class="single-product  w-85 h-20 p-10 m-3
+    div.innerHTML = `<div class="single-product  w-90 h-10 m-3 p-15 fs-15
+    
      bg-white rounded">
       <div>
-    <img class="product-image" src=${image} >
+    <img class="product-image w-75" src=${image} >
       </div>
       <h3>${product.title}</h3>
       <p>Category: ${product.category}</p>
