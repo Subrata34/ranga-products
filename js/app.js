@@ -13,7 +13,7 @@ const showProducts = (products) => {
     const image = product.image;
     const div = document.createElement("div"); 
     div.classList.add("product");
-    div.innerHTML = `<div class="single-product text-success w-85 h-25 p-10 m-3
+    div.innerHTML = `<div class="single-product  w-85 h-20 p-10 m-3
      bg-white rounded-8">
       <div>
     <img class="product-image" src=${image} >
