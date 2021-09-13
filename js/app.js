@@ -13,19 +13,20 @@ const showProducts = (products) => {
     const image = product.image;
     const div = document.createElement("div"); 
     div.classList.add("product");
-    div.innerHTML = `<div class="single-product text-success">
+    div.innerHTML = `<div class="single-product text-success w-85 h-25 p-10 m-3
+     bg-white rounded-8">
       <div>
     <img class="product-image" src=${image} >
       </div>
       <h3>${product.title}</h3>
       <p>Category: ${product.category}</p>
       <h2>Price: $ ${product.price}</h2>
-      <p>Ratings:${product.rating.rate}</p>
-      <p>person rated:${product.rating.count}</p>
+      <p  class="fw-bold" >Ratings:${product.rating.rate}</p>
+      <p >person rated:${product.rating.count}</p>
       <button onclick="addToCart(${product.id},${product.price})" id="addToCart-btn" class="buy-now btn btn-success">add to cart</button>
       <button id="details-btn" class="btn btn-danger">Details</button></div>
       `;
-     // div.innerHTML='';
+     
     const newFile=document.getElementById("all-products");
     newFile.appendChild(div);
   }
